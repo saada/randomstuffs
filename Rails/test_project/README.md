@@ -1,6 +1,5 @@
-== 3agala.com
-
-# Let's restructure society
+# 3agala.com
+> Let's restructure society
 
 3agala.com is a website targeted to help Egyptians, and hopefully other countries later on, to share ideas, collaborate, and solve real problems. It is intended to replace newspapers in the sense that it will help users post third-party articles that they found interesting.
 
