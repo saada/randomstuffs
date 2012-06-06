@@ -1,0 +1,139 @@
+<html>
+<head>
+	<!-- Include CSS file -->
+	<link rel="stylesheet" type="text/css" href="css.css" />
+
+
+	<!-- Global scripts here -->
+		<!-- Include jQuery library -->
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="jquery.blockUI.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		//hide text 
+		$("#t1").hide();
+		$("#t2").hide();
+		$("#t3").hide();
+		$("#t4").hide();
+		//animate text
+		$('#t1').fadeIn(400).animate({
+			left: '+=50',
+			}, 1000, function() {
+			// Animation complete.
+		});
+		$("#t2").delay(2000).fadeIn(400).animate({
+			left: '+=100',
+			}, 1000, function() {
+			// Animation complete.
+		});
+		$("#t3").delay(4000).fadeIn(400).animate({
+			left: '+=150',
+			}, 1000, function() {
+			// Animation complete.
+		});
+		$("#t4").delay(6000).fadeIn(400).animate({
+			left: '+=200',
+			}, 1000, function() {
+			// Animation complete.
+			$('#t1').delay(300).fadeOut(400);
+			$('#t2').delay(300).fadeOut(400);
+			$('#t3').delay(300).fadeOut(400);
+			$('#t4').delay(300).fadeOut(400);
+		});
+	    $.blockUI({ 
+			message: '...',
+	    	css: { 
+	        border: 'none', 
+	        padding: '15px', 
+	        backgroundColor: '#066',
+	        '-webkit-border-radius': '10px', 
+	        '-moz-border-radius': '10px', 
+	        opacity: .75, 
+	        color: '#fff',
+	    } }); 
+	    setTimeout($.unblockUI, 500);
+	    $('#subscribeButton').click(function() { 
+			$.blockUI({ 
+	            message: 'Welcome to my Lair!', 
+	            fadeIn: 700, 
+	            fadeOut: 700, 
+	            timeout: 2000, 
+	            showOverlay: false, 
+	            centerY: false,
+	            css: { 
+	                width: '350px', 
+	                top: '230px', 
+	                left: '125px', 
+	                border: 'none', 
+	                padding: '5px', 
+	                backgroundColor: '#000', 
+	                '-webkit-border-radius': '10px', 
+	                '-moz-border-radius': '10px', 
+	                opacity: .6, 
+	                color: '#fff' 
+	            } 
+	        });
+		});
+		// $("*").hide();
+	});
+	$("#like").click(function() {
+		$('#countText').html(function(i, val) {
+	        $.ajax({
+	            url: '/path/to/script/',
+	            type: 'POST',
+	            data: {increment: true},
+	            success: function() { alert('Request has returned') }
+	        });
+        return +val+1;
+    	});
+	});
+	</script>
+</head>
+ 
+<body>
+	<title> Conquer the Universe </title>
+	<br>
+	<button id="like">
+	  Click here
+	</button>
+	<div name="countText">0</div>
+	<button id="subscribeButton">Enter the lair</button>
+	<div id="t1">It has been long since I was born,</div>
+	<div id="t2">There is much to acheive</div>
+	<div id="t3">With so little time</div>
+	<div id="t4">Enter my lair!</div>
+	<script language="JavaScript">
+	<!--
+	document.onkeydown = function()
+	{
+		if( window.event.srcElement.name == "input_user_name" )
+		{
+			var str = window.event.srcElement.value;
+			var obj = document.getElementById("user_name");
+			if( window.event.keyCode == 8)
+			{
+				obj.innerHTML = str;
+			}
+			else
+			{
+				obj.innerHTML = str + String.fromCharCode (window.event.keyCode);
+			}
+			return true
+		}
+		return true
+	}
+	//-->
+	</script>
+	<noscript></noscript>
+
+	<table >
+		<tr>
+			<td id="user_name"> </td>
+		</tr>
+	</table>
+	<form action="" method="" target="">
+		<input type="Text" name="input_user_name" value="" size="10" maxlength="">
+	</form>
+</body>
+</html>
+

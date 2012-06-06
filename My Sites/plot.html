@@ -1,0 +1,58 @@
+<html>
+	<head>
+		<script src="http://code.highcharts.com/highcharts.js"></script>
+		<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript" src="testing.js"></script>
+		<script type="text/javascript" src="underscore-min.js"></script>
+
+		<style type="text/css">
+			.button{
+		    padding:2px;
+		    border:1px solid #000000;
+		    cursor:pointer;
+		    margin:2px;
+		}
+		​</style>
+	</head>
+	<body>
+		<div id="container" style="height: 400px"></div>
+		<div class="button" data-num="900">Click to build chart then try zoom </div>
+
+		<script type="text/javascript">
+			var chart;
+			function randRange(lowVal, highVal) {
+			    return Math.floor(Math.random() * (highVal - lowVal + 1)) + lowVal;
+			}  
+
+			function randomPoint() {
+			    return {x:randRange(1, 1000), y:randRange(1, 1000)};
+			}
+
+			function makeChart(n) {
+			      var d = [];
+			    _.times(n, function() {
+			        d.push(randomPoint());
+			     });
+			    
+			    if(chart) {
+			       chart.destroy();                                   
+			    }
+			    chart = new Highcharts.Chart({
+			        chart: {
+			            renderTo: 'container',
+			            defaultSeriesType: 'scatter',
+			            zoomType: 'xy'
+			        },
+			        series: [{ data: d }]
+			    });                                  
+			                           
+			}
+
+			$(".button").click(function(e) {
+			    var n = parseInt($(e.target).data("num"));
+			    makeChart(n);
+			}); 
+			​
+		</script>
+	</body>
+​</html>
