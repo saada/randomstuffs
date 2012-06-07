@@ -5,6 +5,6 @@
 For now, the project is focused on three categories:
 Jokes/Memes, Political discussions with polls graphs and voting systems, and Volunteering
 
-This website combines aspects of Reddit, StackOverflow, and adds its own flavors to it.
+This website comibnes aspects of Reddit, StackOverflow, and adds its own flavors to it.
 
 ### Let's restructure society
