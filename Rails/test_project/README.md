@@ -8,3 +8,7 @@ Jokes/Memes, Political discussions with polls graphs and voting systems, and Vol
 This website comibnes aspects of Reddit, StackOverflow, and adds its own flavors to it.
 
 ### Let's restructure society
+
+My Rails TUTORIAL
+RSPEC: For testing. When installed, delete the views and helpers folders it generates as well as Ruby's default "test" folder since they're all useless.
+SPORK: For speeding up RSPEC.
