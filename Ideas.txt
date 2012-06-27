@@ -1,0 +1,18 @@
+Ideas:
+"You are not alone" - talk to a random person
+"Personal website"
+"I love you"
+"people type in letters that get animated automatically
+"html5 geolocation based next prayer time"
+"arabic reddit"
+"change arabic fonts chrome extension"
+
+- Organize the web... How?
+
+- Music jam with other people
+	- A shared DAW !? Live editing, shared!
+	- Collaborative song writing
+	- Computer Keyboard instruments
+
+- Free Interactive Gym Planner with charts, tables, graphs, ...
+	- Use the GRID JS PLUGIN to do it fast and pretty
