@@ -1,0 +1,28 @@
+CSS:
+	Custom Web Fonts:
+		http://fontface.codeandmore.com/
+
+JQUERY:
+	Tabbed Menu
+		http://os.alfajango.com/easytabs/#tabs1-js
+JS PLUGINS:	
+	Image gallery display
+		http://www.jacklmoore.com/colorbox
+		http://buildinternet.com/project/supersized/
+		http://buildinternet.com/project/mosaic/
+	Great Layouts
+		http://isotope.metafizzy.co/index.html
+	Image Slider good for banners
+		http://www.woothemes.com/flexslider/
+	Graph structure
+		http://arborjs.org/
+	Animations
+		http://ricostacruz.com/jquery.transit/
+	Google Maps
+		http://hpneo.github.com/gmaps/examples.html
+	Select Boxes
+		http://harvesthq.github.com/chosen/
+	Cloud synchronization
+		http://js.dotcloud.com/
+	Simpler way to update client objects
+		http://angularjs.org/#/list

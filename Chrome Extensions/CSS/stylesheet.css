@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'BElham';
+    src: url('belham.eot');
+    src: url('belham.eot?#iefix') format('embedded-opentype'),
+         url('belham.woff') format('woff'),
+         url('belham.ttf') format('truetype'),
+         url('belham.svg#belham') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*
+body{
+	font-size:100;
+	text-align: center;
+}
+
+p 
+{ 
+	display: inline;
+	background:lightblue;
+}
+
+[dir='rtl'] 
+{ 
+	background:lightblue;
+}
+*/
