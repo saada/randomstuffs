@@ -1,0 +1,527 @@
+[1:7504:0] 2012-07-04 01:31:11 - [[JAXL]] No callbacks for shutdown
+
+[1:6388:0] 2012-07-04 01:31:34 - [[JAXL]] No callbacks for shutdown
+
+[1:6388:0] 2012-07-05 17:21:55 - [[JAXL]] No callbacks for shutdown
+
+[1:6388:0] 2012-07-05 17:22:11 - [[JAXL]] No callbacks for shutdown
+
+[1:6388:0] 2012-07-05 17:49:59 - [[JAXL]] No callbacks for shutdown
+
+[1:6388:0] 2012-07-05 17:52:03 - [[JAXL]] No callbacks for shutdown
+
+[1:6388:0] 2012-07-05 17:52:05 - [[JAXL]] No callbacks for shutdown
+
+[1:6388:0] 2012-07-05 17:52:05 - [[JAXL]] No callbacks for shutdown
+
+[1:6388:0] 2012-07-05 17:52:06 - [[JAXL]] No callbacks for shutdown
+
+[1:6388:0] 2012-07-05 17:52:06 - [[JAXL]] No callbacks for shutdown
+
+[1:5396:0] 2012-07-05 18:16:32 - [[JAXL]] No callbacks for shutdown
+
+[1:4016:0] 2012-07-05 18:22:51 - [[XMPPSend]] body
+<body content='text/xml; charset=utf-8' hold='1' xmlns='http://jabber.org/protocol/httpbind' wait='30' rid='4027' version='1.6' polling='0' secure='1' xmlns:xmpp='urn:xmpp:xbosh' to='localhost' route='xmpp:localhost:5222' xmpp:version='1.0'/>
+
+[1:4016:0] 2012-07-05 18:22:55 - [[JAXL0124]] Curl errno 7 encountered. Failed to connect with http://localhost:5280/http-bind/
+
+[1:4016:0] 2012-07-05 18:23:08 - [[XMPPSend]] body
+<body content='text/xml; charset=utf-8' hold='1' xmlns='http://jabber.org/protocol/httpbind' wait='30' rid='3756' version='1.6' polling='0' secure='1' xmlns:xmpp='urn:xmpp:xbosh' to='localhost' route='xmpp:localhost:5222' xmpp:version='1.0'/>
+
+[1:4016:0] 2012-07-05 18:23:12 - [[JAXL0124]] Curl errno 7 encountered. Failed to connect with http://localhost:5280/http-bind/
+
+[1:4016:0] 2012-07-05 18:25:28 - [[XMPPSend]] body
+<body content='text/xml; charset=utf-8' hold='1' xmlns='http://jabber.org/protocol/httpbind' wait='30' rid='8557' version='1.6' polling='0' secure='1' xmlns:xmpp='urn:xmpp:xbosh' to='localhost' route='xmpp:localhost:5222' xmpp:version='1.0'/>
+
+[1:4016:0] 2012-07-05 18:25:32 - [[JAXL0124]] Curl errno 7 encountered. Failed to connect with http://localhost:5280/http-bind/
+
+[1:4016:0] 2012-07-05 18:29:23 - [[XMPPSend]] body
+<body content='text/xml; charset=utf-8' hold='1' xmlns='http://jabber.org/protocol/httpbind' wait='30' rid='3036' version='1.6' polling='0' secure='1' xmlns:xmpp='urn:xmpp:xbosh' to='localhost' route='xmpp:localhost:5222' xmpp:version='1.0'/>
+
+[1:4016:0] 2012-07-05 18:29:23 - [[XMPPGet]] 
+<body xmlns="http://jabber.org/protocol/httpbind" xmlns:stream="http://etherx.jabber.org/streams" authid="358718ad" sid="358718ad" secure="true" requests="2" inactivity="30" polling="5" wait="30"><stream:features><mechanisms xmlns="urn:ietf:params:xml:ns:xmpp-sasl"><mechanism>DIGEST-MD5</mechanism><mechanism>PLAIN</mechanism><mechanism>ANONYMOUS</mechanism><mechanism>CRAM-MD5</mechanism></mechanisms><compression xmlns="http://jabber.org/features/compress"><method>zlib</method></compression><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"/><session xmlns="urn:ietf:params:xml:ns:xmpp-session"/></stream:features></body>
+
+[1:4016:0] 2012-07-05 18:29:23 - [[XMPPSend]] Performing Auth type: PLAIN
+
+[1:4016:0] 2012-07-05 18:29:23 - [[XMPPSend]] body
+<body rid="3037" sid="358718ad" xmlns="http://jabber.org/protocol/httpbind"><auth xmlns="urn:ietf:params:xml:ns:xmpp-sasl" mechanism="PLAIN">AHRlcnJ5AHRlcnJ5</auth></body>
+
+[1:4016:0] 2012-07-05 18:29:23 - [[XMPPGet]] 
+<body xmlns='http://jabber.org/protocol/httpbind'><success xmlns="urn:ietf:params:xml:ns:xmpp-sasl"/></body>
+
+[1:4016:0] 2012-07-05 18:29:24 - [[XMPPSend]] body
+<body rid='3038' sid='358718ad' xmlns='http://jabber.org/protocol/httpbind' to='localhost' xmpp:restart='true' xmlns:xmpp='urn:xmpp:xbosh'/>
+
+[1:4016:0] 2012-07-05 18:29:24 - [[XMPPGet]] 
+<body xmlns="http://jabber.org/protocol/httpbind" xmlns:stream="http://etherx.jabber.org/streams"><stream:features><compression xmlns="http://jabber.org/features/compress"><method>zlib</method></compression><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"/><session xmlns="urn:ietf:params:xml:ns:xmpp-session"/></stream:features></body>
+
+[1:4016:0] 2012-07-05 18:29:24 - [[XMPPSend]] body
+<body rid="3039" sid="358718ad" xmlns="http://jabber.org/protocol/httpbind"><iq type="set" id="4"><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"><resource>jaxl.1.1341512963</resource></bind></iq></body>
+
+[1:4016:0] 2012-07-05 18:29:24 - [[XMPPGet]] 
+<body xmlns='http://jabber.org/protocol/httpbind'><iq xmlns="jabber:client" type="result" id="4" to="mobicloud/358718ad"><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"><jid>terry@mobicloud/jaxl.1.1341512963</jid></bind></iq></body>
+
+[1:4016:0] 2012-07-05 18:29:24 - [[XMPPSend]] body
+<body rid="3040" sid="358718ad" xmlns="http://jabber.org/protocol/httpbind"><iq type="set" id="5" to="localhost"><session xmlns="urn:ietf:params:xml:ns:xmpp-session"/></iq></body>
+
+[1:4016:0] 2012-07-05 18:29:24 - [[XMPPGet]] 
+<body xmlns='http://jabber.org/protocol/httpbind'><iq xmlns="jabber:client" type="error" id="5" to="terry@mobicloud/jaxl.1.1341512963" from="localhost"><session xmlns="urn:ietf:params:xml:ns:xmpp-session"/><error code="404" type="cancel"><remote-server-not-found xmlns="urn:ietf:params:xml:ns:xmpp-stanzas"/></error></iq></body>
+
+[1:4016:0] 2012-07-05 18:29:40 - [[XMPPSend]] body
+<body content='text/xml; charset=utf-8' hold='1' xmlns='http://jabber.org/protocol/httpbind' wait='30' rid='3041' version='1.6' polling='0' secure='1' xmlns:xmpp='urn:xmpp:xbosh' to='localhost' route='xmpp:localhost:5222' xmpp:version='1.0'/>
+
+[1:4016:0] 2012-07-05 18:29:40 - [[XMPPGet]] 
+<body xmlns="http://jabber.org/protocol/httpbind" xmlns:stream="http://etherx.jabber.org/streams" authid="95ad58e8" sid="95ad58e8" secure="true" requests="2" inactivity="30" polling="5" wait="30"><stream:features><mechanisms xmlns="urn:ietf:params:xml:ns:xmpp-sasl"><mechanism>DIGEST-MD5</mechanism><mechanism>PLAIN</mechanism><mechanism>ANONYMOUS</mechanism><mechanism>CRAM-MD5</mechanism></mechanisms><compression xmlns="http://jabber.org/features/compress"><method>zlib</method></compression><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"/><session xmlns="urn:ietf:params:xml:ns:xmpp-session"/></stream:features></body>
+
+[1:4016:0] 2012-07-05 18:29:40 - [[XMPPSend]] Performing Auth type: PLAIN
+
+[1:4016:0] 2012-07-05 18:29:40 - [[XMPPSend]] body
+<body rid="3042" sid="95ad58e8" xmlns="http://jabber.org/protocol/httpbind"><auth xmlns="urn:ietf:params:xml:ns:xmpp-sasl" mechanism="PLAIN">AHRlcnJ5AHRlcnJ5</auth></body>
+
+[1:4016:0] 2012-07-05 18:29:40 - [[XMPPGet]] 
+<body xmlns='http://jabber.org/protocol/httpbind'><success xmlns="urn:ietf:params:xml:ns:xmpp-sasl"/></body>
+
+[1:4016:0] 2012-07-05 18:29:40 - [[XMPPSend]] body
+<body rid='3043' sid='95ad58e8' xmlns='http://jabber.org/protocol/httpbind' to='localhost' xmpp:restart='true' xmlns:xmpp='urn:xmpp:xbosh'/>
+
+[1:4016:0] 2012-07-05 18:29:40 - [[XMPPGet]] 
+<body xmlns="http://jabber.org/protocol/httpbind" xmlns:stream="http://etherx.jabber.org/streams"><stream:features><compression xmlns="http://jabber.org/features/compress"><method>zlib</method></compression><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"/><session xmlns="urn:ietf:params:xml:ns:xmpp-session"/></stream:features></body>
+
+[1:4016:0] 2012-07-05 18:29:40 - [[XMPPSend]] body
+<body rid="3044" sid="95ad58e8" xmlns="http://jabber.org/protocol/httpbind"><iq type="set" id="6"><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"><resource>jaxl.1.1341512980</resource></bind></iq></body>
+
+[1:4016:0] 2012-07-05 18:29:40 - [[XMPPGet]] 
+<body xmlns='http://jabber.org/protocol/httpbind'><iq xmlns="jabber:client" type="result" id="6" to="mobicloud/95ad58e8"><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"><jid>terry@mobicloud/jaxl.1.1341512980</jid></bind></iq></body>
+
+[1:4016:0] 2012-07-05 18:29:40 - [[XMPPSend]] body
+<body rid="3045" sid="95ad58e8" xmlns="http://jabber.org/protocol/httpbind"><iq type="set" id="7" to="localhost"><session xmlns="urn:ietf:params:xml:ns:xmpp-session"/></iq></body>
+
+[1:4016:0] 2012-07-05 18:29:40 - [[XMPPGet]] 
+<body xmlns='http://jabber.org/protocol/httpbind'><iq xmlns="jabber:client" type="error" id="7" to="terry@mobicloud/jaxl.1.1341512980" from="localhost"><session xmlns="urn:ietf:params:xml:ns:xmpp-session"/><error code="404" type="cancel"><remote-server-not-found xmlns="urn:ietf:params:xml:ns:xmpp-stanzas"/></error></iq></body>
+
+[1:4016:0] 2012-07-05 18:32:34 - [[XMPPSend]] body
+<body content='text/xml; charset=utf-8' hold='1' xmlns='http://jabber.org/protocol/httpbind' wait='30' rid='3046' version='1.6' polling='0' secure='1' xmlns:xmpp='urn:xmpp:xbosh' to='localhost' route='xmpp:localhost:5222' xmpp:version='1.0'/>
+
+[1:4016:0] 2012-07-05 18:32:34 - [[XMPPGet]] 
+<body xmlns="http://jabber.org/protocol/httpbind" xmlns:stream="http://etherx.jabber.org/streams" authid="7cfc3426" sid="7cfc3426" secure="true" requests="2" inactivity="30" polling="5" wait="30"><stream:features><mechanisms xmlns="urn:ietf:params:xml:ns:xmpp-sasl"><mechanism>DIGEST-MD5</mechanism><mechanism>PLAIN</mechanism><mechanism>ANONYMOUS</mechanism><mechanism>CRAM-MD5</mechanism></mechanisms><compression xmlns="http://jabber.org/features/compress"><method>zlib</method></compression><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"/><session xmlns="urn:ietf:params:xml:ns:xmpp-session"/></stream:features></body>
+
+[1:4016:0] 2012-07-05 18:32:34 - [[XMPPSend]] Performing Auth type: PLAIN
+
+[1:4016:0] 2012-07-05 18:32:34 - [[XMPPSend]] body
+<body rid="3047" sid="7cfc3426" xmlns="http://jabber.org/protocol/httpbind"><auth xmlns="urn:ietf:params:xml:ns:xmpp-sasl" mechanism="PLAIN">AGplcnJ5AGplcnJ5</auth></body>
+
+[1:4016:0] 2012-07-05 18:32:34 - [[XMPPGet]] 
+<body xmlns='http://jabber.org/protocol/httpbind'><success xmlns="urn:ietf:params:xml:ns:xmpp-sasl"/></body>
+
+[1:4016:0] 2012-07-05 18:32:34 - [[XMPPSend]] body
+<body rid='3048' sid='7cfc3426' xmlns='http://jabber.org/protocol/httpbind' to='localhost' xmpp:restart='true' xmlns:xmpp='urn:xmpp:xbosh'/>
+
+[1:4016:0] 2012-07-05 18:32:34 - [[XMPPGet]] 
+<body xmlns="http://jabber.org/protocol/httpbind" xmlns:stream="http://etherx.jabber.org/streams"><stream:features><compression xmlns="http://jabber.org/features/compress"><method>zlib</method></compression><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"/><session xmlns="urn:ietf:params:xml:ns:xmpp-session"/></stream:features></body>
+
+[1:4016:0] 2012-07-05 18:32:34 - [[XMPPSend]] body
+<body rid="3049" sid="7cfc3426" xmlns="http://jabber.org/protocol/httpbind"><iq type="set" id="8"><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"><resource>jaxl.1.1341513154</resource></bind></iq></body>
+
+[1:4016:0] 2012-07-05 18:32:34 - [[XMPPGet]] 
+<body xmlns='http://jabber.org/protocol/httpbind'><iq xmlns="jabber:client" type="result" id="8" to="mobicloud/7cfc3426"><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"><jid>jerry@mobicloud/jaxl.1.1341513154</jid></bind></iq></body>
+
+[1:4016:0] 2012-07-05 18:32:34 - [[XMPPSend]] body
+<body rid="3050" sid="7cfc3426" xmlns="http://jabber.org/protocol/httpbind"><iq type="set" id="9" to="localhost"><session xmlns="urn:ietf:params:xml:ns:xmpp-session"/></iq></body>
+
+[1:4016:0] 2012-07-05 18:32:34 - [[XMPPGet]] 
+<body xmlns='http://jabber.org/protocol/httpbind'><iq xmlns="jabber:client" type="error" id="9" to="jerry@mobicloud/jaxl.1.1341513154" from="localhost"><session xmlns="urn:ietf:params:xml:ns:xmpp-session"/><error code="404" type="cancel"><remote-server-not-found xmlns="urn:ietf:params:xml:ns:xmpp-stanzas"/></error></iq></body>
+
+[1:4016:0] 2012-07-05 18:34:16 - [[XMPPSend]] body
+<body content='text/xml; charset=utf-8' hold='1' xmlns='http://jabber.org/protocol/httpbind' wait='30' rid='3051' version='1.6' polling='0' secure='1' xmlns:xmpp='urn:xmpp:xbosh' to='localhost' route='xmpp:localhost:7070' xmpp:version='1.0'/>
+
+[1:4016:0] 2012-07-05 18:34:16 - [[XMPPGet]] 
+<body xmlns="http://jabber.org/protocol/httpbind" xmlns:stream="http://etherx.jabber.org/streams" authid="48e4ee00" sid="48e4ee00" secure="true" requests="2" inactivity="30" polling="5" wait="30"><stream:features><mechanisms xmlns="urn:ietf:params:xml:ns:xmpp-sasl"><mechanism>DIGEST-MD5</mechanism><mechanism>PLAIN</mechanism><mechanism>ANONYMOUS</mechanism><mechanism>CRAM-MD5</mechanism></mechanisms><compression xmlns="http://jabber.org/features/compress"><method>zlib</method></compression><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"/><session xmlns="urn:ietf:params:xml:ns:xmpp-session"/></stream:features></body>
+
+[1:4016:0] 2012-07-05 18:34:16 - [[XMPPSend]] Performing Auth type: PLAIN
+
+[1:4016:0] 2012-07-05 18:34:16 - [[XMPPSend]] body
+<body rid="3052" sid="48e4ee00" xmlns="http://jabber.org/protocol/httpbind"><auth xmlns="urn:ietf:params:xml:ns:xmpp-sasl" mechanism="PLAIN">AHRlcnJ5AHRlcnJ5</auth></body>
+
+[1:4016:0] 2012-07-05 18:34:16 - [[XMPPGet]] 
+<body xmlns='http://jabber.org/protocol/httpbind'><success xmlns="urn:ietf:params:xml:ns:xmpp-sasl"/></body>
+
+[1:4016:0] 2012-07-05 18:34:16 - [[XMPPSend]] body
+<body rid='3053' sid='48e4ee00' xmlns='http://jabber.org/protocol/httpbind' to='localhost' xmpp:restart='true' xmlns:xmpp='urn:xmpp:xbosh'/>
+
+[1:4016:0] 2012-07-05 18:34:16 - [[XMPPGet]] 
+<body xmlns="http://jabber.org/protocol/httpbind" xmlns:stream="http://etherx.jabber.org/streams"><stream:features><compression xmlns="http://jabber.org/features/compress"><method>zlib</method></compression><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"/><session xmlns="urn:ietf:params:xml:ns:xmpp-session"/></stream:features></body>
+
+[1:4016:0] 2012-07-05 18:34:16 - [[XMPPSend]] body
+<body rid="3054" sid="48e4ee00" xmlns="http://jabber.org/protocol/httpbind"><iq type="set" id="a"><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"><resource>jaxl.1.1341513256</resource></bind></iq></body>
+
+[1:4016:0] 2012-07-05 18:34:16 - [[XMPPGet]] 
+<body xmlns='http://jabber.org/protocol/httpbind'><iq xmlns="jabber:client" type="result" id="a" to="mobicloud/48e4ee00"><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"><jid>terry@mobicloud/jaxl.1.1341513256</jid></bind></iq></body>
+
+[1:4016:0] 2012-07-05 18:34:16 - [[XMPPSend]] body
+<body rid="3055" sid="48e4ee00" xmlns="http://jabber.org/protocol/httpbind"><iq type="set" id="b" to="localhost"><session xmlns="urn:ietf:params:xml:ns:xmpp-session"/></iq></body>
+
+[1:4016:0] 2012-07-05 18:34:16 - [[XMPPGet]] 
+<body xmlns='http://jabber.org/protocol/httpbind'><iq xmlns="jabber:client" type="error" id="b" to="terry@mobicloud/jaxl.1.1341513256" from="localhost"><session xmlns="urn:ietf:params:xml:ns:xmpp-session"/><error code="404" type="cancel"><remote-server-not-found xmlns="urn:ietf:params:xml:ns:xmpp-stanzas"/></error></iq></body>
+
+[1:4016:0] 2012-07-05 18:34:36 - [[XMPPSend]] body
+<body content='text/xml; charset=utf-8' hold='1' xmlns='http://jabber.org/protocol/httpbind' wait='30' rid='3056' version='1.6' polling='0' secure='1' xmlns:xmpp='urn:xmpp:xbosh' to='localhost' route='xmpp:localhost:7070' xmpp:version='1.0'/>
+
+[1:4016:0] 2012-07-05 18:34:36 - [[XMPPGet]] 
+<body xmlns="http://jabber.org/protocol/httpbind" xmlns:stream="http://etherx.jabber.org/streams" authid="ee1bff50" sid="ee1bff50" secure="true" requests="2" inactivity="30" polling="5" wait="30"><stream:features><mechanisms xmlns="urn:ietf:params:xml:ns:xmpp-sasl"><mechanism>DIGEST-MD5</mechanism><mechanism>PLAIN</mechanism><mechanism>ANONYMOUS</mechanism><mechanism>CRAM-MD5</mechanism></mechanisms><compression xmlns="http://jabber.org/features/compress"><method>zlib</method></compression><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"/><session xmlns="urn:ietf:params:xml:ns:xmpp-session"/></stream:features></body>
+
+[1:4016:0] 2012-07-05 18:34:36 - [[XMPPSend]] Performing Auth type: PLAIN
+
+[1:4016:0] 2012-07-05 18:34:36 - [[XMPPSend]] body
+<body rid="3057" sid="ee1bff50" xmlns="http://jabber.org/protocol/httpbind"><auth xmlns="urn:ietf:params:xml:ns:xmpp-sasl" mechanism="PLAIN">AHRlcgB0ZXI=</auth></body>
+
+[1:4016:0] 2012-07-05 18:34:36 - [[XMPPGet]] 
+<body xmlns='http://jabber.org/protocol/httpbind'><failure xmlns="urn:ietf:params:xml:ns:xmpp-sasl"><not-authorized/></failure></body>
+
+[1:4016:0] 2012-07-05 18:34:36 - [[XMPPGet]] Unable to complete SASL Auth, see logs for detail...
+
+[1:4016:0] 2012-07-05 18:34:36 - [[JAXL]] Shutting down ...
+
+[1:4016:0] 2012-07-05 18:34:38 - [[XMPPSend]] body
+<body content='text/xml; charset=utf-8' hold='1' xmlns='http://jabber.org/protocol/httpbind' wait='30' rid='3058' version='1.6' polling='0' secure='1' xmlns:xmpp='urn:xmpp:xbosh' to='localhost' route='xmpp:localhost:7070' xmpp:version='1.0'/>
+
+[1:4016:0] 2012-07-05 18:34:38 - [[XMPPGet]] 
+<body xmlns="http://jabber.org/protocol/httpbind" xmlns:stream="http://etherx.jabber.org/streams" authid="c09d8942" sid="c09d8942" secure="true" requests="2" inactivity="30" polling="5" wait="30"><stream:features><mechanisms xmlns="urn:ietf:params:xml:ns:xmpp-sasl"><mechanism>DIGEST-MD5</mechanism><mechanism>PLAIN</mechanism><mechanism>ANONYMOUS</mechanism><mechanism>CRAM-MD5</mechanism></mechanisms><compression xmlns="http://jabber.org/features/compress"><method>zlib</method></compression><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"/><session xmlns="urn:ietf:params:xml:ns:xmpp-session"/></stream:features></body>
+
+[1:4016:0] 2012-07-05 18:34:38 - [[XMPPSend]] Performing Auth type: PLAIN
+
+[1:4016:0] 2012-07-05 18:34:38 - [[XMPPSend]] body
+<body rid="3059" sid="c09d8942" xmlns="http://jabber.org/protocol/httpbind"><auth xmlns="urn:ietf:params:xml:ns:xmpp-sasl" mechanism="PLAIN">AHRlcgB0ZXI=</auth></body>
+
+[1:4016:0] 2012-07-05 18:34:38 - [[XMPPGet]] 
+<body xmlns='http://jabber.org/protocol/httpbind'><failure xmlns="urn:ietf:params:xml:ns:xmpp-sasl"><not-authorized/></failure></body>
+
+[1:4016:0] 2012-07-05 18:34:38 - [[XMPPGet]] Unable to complete SASL Auth, see logs for detail...
+
+[1:4016:0] 2012-07-05 18:34:38 - [[JAXL]] Shutting down ...
+
+[1:4016:0] 2012-07-05 18:34:39 - [[XMPPSend]] body
+<body content='text/xml; charset=utf-8' hold='1' xmlns='http://jabber.org/protocol/httpbind' wait='30' rid='3060' version='1.6' polling='0' secure='1' xmlns:xmpp='urn:xmpp:xbosh' to='localhost' route='xmpp:localhost:7070' xmpp:version='1.0'/>
+
+[1:4016:0] 2012-07-05 18:34:39 - [[XMPPGet]] 
+<body xmlns="http://jabber.org/protocol/httpbind" xmlns:stream="http://etherx.jabber.org/streams" authid="936b2c33" sid="936b2c33" secure="true" requests="2" inactivity="30" polling="5" wait="30"><stream:features><mechanisms xmlns="urn:ietf:params:xml:ns:xmpp-sasl"><mechanism>DIGEST-MD5</mechanism><mechanism>PLAIN</mechanism><mechanism>ANONYMOUS</mechanism><mechanism>CRAM-MD5</mechanism></mechanisms><compression xmlns="http://jabber.org/features/compress"><method>zlib</method></compression><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"/><session xmlns="urn:ietf:params:xml:ns:xmpp-session"/></stream:features></body>
+
+[1:4016:0] 2012-07-05 18:34:39 - [[XMPPSend]] Performing Auth type: PLAIN
+
+[1:4016:0] 2012-07-05 18:34:39 - [[XMPPSend]] body
+<body rid="3061" sid="936b2c33" xmlns="http://jabber.org/protocol/httpbind"><auth xmlns="urn:ietf:params:xml:ns:xmpp-sasl" mechanism="PLAIN">AHRlcgB0ZXI=</auth></body>
+
+[1:4016:0] 2012-07-05 18:34:39 - [[XMPPGet]] 
+<body xmlns='http://jabber.org/protocol/httpbind'><failure xmlns="urn:ietf:params:xml:ns:xmpp-sasl"><not-authorized/></failure></body>
+
+[1:4016:0] 2012-07-05 18:34:39 - [[XMPPGet]] Unable to complete SASL Auth, see logs for detail...
+
+[1:4016:0] 2012-07-05 18:34:39 - [[JAXL]] Shutting down ...
+
+[1:4016:0] 2012-07-05 18:34:40 - [[XMPPSend]] body
+<body content='text/xml; charset=utf-8' hold='1' xmlns='http://jabber.org/protocol/httpbind' wait='30' rid='3062' version='1.6' polling='0' secure='1' xmlns:xmpp='urn:xmpp:xbosh' to='localhost' route='xmpp:localhost:7070' xmpp:version='1.0'/>
+
+[1:4016:0] 2012-07-05 18:34:40 - [[XMPPGet]] 
+<body xmlns="http://jabber.org/protocol/httpbind" xmlns:stream="http://etherx.jabber.org/streams" authid="fcf7eea7" sid="fcf7eea7" secure="true" requests="2" inactivity="30" polling="5" wait="30"><stream:features><mechanisms xmlns="urn:ietf:params:xml:ns:xmpp-sasl"><mechanism>DIGEST-MD5</mechanism><mechanism>PLAIN</mechanism><mechanism>ANONYMOUS</mechanism><mechanism>CRAM-MD5</mechanism></mechanisms><compression xmlns="http://jabber.org/features/compress"><method>zlib</method></compression><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"/><session xmlns="urn:ietf:params:xml:ns:xmpp-session"/></stream:features></body>
+
+[1:4016:0] 2012-07-05 18:34:40 - [[XMPPSend]] Performing Auth type: PLAIN
+
+[1:4016:0] 2012-07-05 18:34:40 - [[XMPPSend]] body
+<body rid="3063" sid="fcf7eea7" xmlns="http://jabber.org/protocol/httpbind"><auth xmlns="urn:ietf:params:xml:ns:xmpp-sasl" mechanism="PLAIN">AHRlcgB0ZXI=</auth></body>
+
+[1:4016:0] 2012-07-05 18:34:40 - [[XMPPGet]] 
+<body xmlns='http://jabber.org/protocol/httpbind'><failure xmlns="urn:ietf:params:xml:ns:xmpp-sasl"><not-authorized/></failure></body>
+
+[1:4016:0] 2012-07-05 18:34:40 - [[XMPPGet]] Unable to complete SASL Auth, see logs for detail...
+
+[1:4016:0] 2012-07-05 18:34:40 - [[JAXL]] Shutting down ...
+
+[1:4016:0] 2012-07-05 18:34:41 - [[XMPPSend]] body
+<body content='text/xml; charset=utf-8' hold='1' xmlns='http://jabber.org/protocol/httpbind' wait='30' rid='3064' version='1.6' polling='0' secure='1' xmlns:xmpp='urn:xmpp:xbosh' to='localhost' route='xmpp:localhost:7070' xmpp:version='1.0'/>
+
+[1:4016:0] 2012-07-05 18:34:41 - [[XMPPGet]] 
+<body xmlns="http://jabber.org/protocol/httpbind" xmlns:stream="http://etherx.jabber.org/streams" authid="c049dd0c" sid="c049dd0c" secure="true" requests="2" inactivity="30" polling="5" wait="30"><stream:features><mechanisms xmlns="urn:ietf:params:xml:ns:xmpp-sasl"><mechanism>DIGEST-MD5</mechanism><mechanism>PLAIN</mechanism><mechanism>ANONYMOUS</mechanism><mechanism>CRAM-MD5</mechanism></mechanisms><compression xmlns="http://jabber.org/features/compress"><method>zlib</method></compression><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"/><session xmlns="urn:ietf:params:xml:ns:xmpp-session"/></stream:features></body>
+
+[1:4016:0] 2012-07-05 18:34:41 - [[XMPPSend]] Performing Auth type: PLAIN
+
+[1:4016:0] 2012-07-05 18:34:41 - [[XMPPSend]] body
+<body rid="3065" sid="c049dd0c" xmlns="http://jabber.org/protocol/httpbind"><auth xmlns="urn:ietf:params:xml:ns:xmpp-sasl" mechanism="PLAIN">AHRlcgB0ZXI=</auth></body>
+
+[1:4016:0] 2012-07-05 18:34:41 - [[XMPPGet]] 
+<body xmlns='http://jabber.org/protocol/httpbind'><failure xmlns="urn:ietf:params:xml:ns:xmpp-sasl"><not-authorized/></failure></body>
+
+[1:4016:0] 2012-07-05 18:34:41 - [[XMPPGet]] Unable to complete SASL Auth, see logs for detail...
+
+[1:4016:0] 2012-07-05 18:34:41 - [[JAXL]] Shutting down ...
+
+[1:4016:0] 2012-07-05 18:35:21 - [[XMPPSend]] body
+<body content='text/xml; charset=utf-8' hold='1' xmlns='http://jabber.org/protocol/httpbind' wait='30' rid='3066' version='1.6' polling='0' secure='1' xmlns:xmpp='urn:xmpp:xbosh' to='localhost' route='xmpp:localhost:7070' xmpp:version='1.0'/>
+
+[1:4016:0] 2012-07-05 18:35:21 - [[XMPPGet]] 
+<body xmlns="http://jabber.org/protocol/httpbind" xmlns:stream="http://etherx.jabber.org/streams" authid="e23860de" sid="e23860de" secure="true" requests="2" inactivity="30" polling="5" wait="30"><stream:features><mechanisms xmlns="urn:ietf:params:xml:ns:xmpp-sasl"><mechanism>DIGEST-MD5</mechanism><mechanism>PLAIN</mechanism><mechanism>ANONYMOUS</mechanism><mechanism>CRAM-MD5</mechanism></mechanisms><compression xmlns="http://jabber.org/features/compress"><method>zlib</method></compression><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"/><session xmlns="urn:ietf:params:xml:ns:xmpp-session"/></stream:features></body>
+
+[1:4016:0] 2012-07-05 18:35:21 - [[XMPPSend]] Performing Auth type: PLAIN
+
+[1:4016:0] 2012-07-05 18:35:21 - [[XMPPSend]] body
+<body rid="3067" sid="e23860de" xmlns="http://jabber.org/protocol/httpbind"><auth xmlns="urn:ietf:params:xml:ns:xmpp-sasl" mechanism="PLAIN">AHRlcnJ5AHRlcnJ5</auth></body>
+
+[1:4016:0] 2012-07-05 18:35:21 - [[XMPPGet]] 
+<body xmlns='http://jabber.org/protocol/httpbind'><success xmlns="urn:ietf:params:xml:ns:xmpp-sasl"/></body>
+
+[1:4016:0] 2012-07-05 18:35:21 - [[XMPPSend]] body
+<body rid='3068' sid='e23860de' xmlns='http://jabber.org/protocol/httpbind' to='localhost' xmpp:restart='true' xmlns:xmpp='urn:xmpp:xbosh'/>
+
+[1:4016:0] 2012-07-05 18:35:21 - [[XMPPGet]] 
+<body xmlns="http://jabber.org/protocol/httpbind" xmlns:stream="http://etherx.jabber.org/streams"><stream:features><compression xmlns="http://jabber.org/features/compress"><method>zlib</method></compression><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"/><session xmlns="urn:ietf:params:xml:ns:xmpp-session"/></stream:features></body>
+
+[1:4016:0] 2012-07-05 18:35:21 - [[XMPPSend]] body
+<body rid="3069" sid="e23860de" xmlns="http://jabber.org/protocol/httpbind"><iq type="set" id="c"><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"><resource>jaxl.1.1341513321</resource></bind></iq></body>
+
+[1:4016:0] 2012-07-05 18:35:21 - [[XMPPGet]] 
+<body xmlns='http://jabber.org/protocol/httpbind'><iq xmlns="jabber:client" type="result" id="c" to="mobicloud/e23860de"><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"><jid>terry@mobicloud/jaxl.1.1341513321</jid></bind></iq></body>
+
+[1:4016:0] 2012-07-05 18:35:21 - [[XMPPSend]] body
+<body rid="3070" sid="e23860de" xmlns="http://jabber.org/protocol/httpbind"><iq type="set" id="d" to="localhost"><session xmlns="urn:ietf:params:xml:ns:xmpp-session"/></iq></body>
+
+[1:4016:0] 2012-07-05 18:35:21 - [[XMPPGet]] 
+<body xmlns='http://jabber.org/protocol/httpbind'><iq xmlns="jabber:client" type="error" id="d" to="terry@mobicloud/jaxl.1.1341513321" from="localhost"><session xmlns="urn:ietf:params:xml:ns:xmpp-session"/><error code="404" type="cancel"><remote-server-not-found xmlns="urn:ietf:params:xml:ns:xmpp-stanzas"/></error></iq></body>
+
+[1:4016:0] 2012-07-05 18:37:17 - [[XMPPSend]] body
+<body content='text/xml; charset=utf-8' hold='1' xmlns='http://jabber.org/protocol/httpbind' wait='30' rid='3071' version='1.6' polling='0' secure='1' xmlns:xmpp='urn:xmpp:xbosh' to='localhost' route='xmpp:localhost:7070' xmpp:version='1.0'/>
+
+[1:4016:0] 2012-07-05 18:37:17 - [[XMPPGet]] 
+<body xmlns="http://jabber.org/protocol/httpbind" xmlns:stream="http://etherx.jabber.org/streams" authid="516d0a78" sid="516d0a78" secure="true" requests="2" inactivity="30" polling="5" wait="30"><stream:features><mechanisms xmlns="urn:ietf:params:xml:ns:xmpp-sasl"><mechanism>DIGEST-MD5</mechanism><mechanism>PLAIN</mechanism><mechanism>ANONYMOUS</mechanism><mechanism>CRAM-MD5</mechanism></mechanisms><compression xmlns="http://jabber.org/features/compress"><method>zlib</method></compression><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"/><session xmlns="urn:ietf:params:xml:ns:xmpp-session"/></stream:features></body>
+
+[1:4016:0] 2012-07-05 18:37:17 - [[XMPPSend]] Performing Auth type: PLAIN
+
+[1:4016:0] 2012-07-05 18:37:17 - [[XMPPSend]] body
+<body rid="3072" sid="516d0a78" xmlns="http://jabber.org/protocol/httpbind"><auth xmlns="urn:ietf:params:xml:ns:xmpp-sasl" mechanism="PLAIN">AHRlcnJ5AHRlcnJ5</auth></body>
+
+[1:4016:0] 2012-07-05 18:37:17 - [[XMPPGet]] 
+<body xmlns='http://jabber.org/protocol/httpbind'><success xmlns="urn:ietf:params:xml:ns:xmpp-sasl"/></body>
+
+[1:4016:0] 2012-07-05 18:37:17 - [[XMPPSend]] body
+<body rid='3073' sid='516d0a78' xmlns='http://jabber.org/protocol/httpbind' to='localhost' xmpp:restart='true' xmlns:xmpp='urn:xmpp:xbosh'/>
+
+[1:4016:0] 2012-07-05 18:37:17 - [[XMPPGet]] 
+<body xmlns="http://jabber.org/protocol/httpbind" xmlns:stream="http://etherx.jabber.org/streams"><stream:features><compression xmlns="http://jabber.org/features/compress"><method>zlib</method></compression><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"/><session xmlns="urn:ietf:params:xml:ns:xmpp-session"/></stream:features></body>
+
+[1:4016:0] 2012-07-05 18:37:17 - [[XMPPSend]] body
+<body rid="3074" sid="516d0a78" xmlns="http://jabber.org/protocol/httpbind"><iq type="set" id="e"><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"><resource>jaxl.1.1341513437</resource></bind></iq></body>
+
+[1:4016:0] 2012-07-05 18:37:17 - [[XMPPGet]] 
+<body xmlns='http://jabber.org/protocol/httpbind'><iq xmlns="jabber:client" type="result" id="e" to="mobicloud/516d0a78"><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"><jid>terry@mobicloud/jaxl.1.1341513437</jid></bind></iq></body>
+
+[1:4016:0] 2012-07-05 18:37:17 - [[XMPPSend]] body
+<body rid="3075" sid="516d0a78" xmlns="http://jabber.org/protocol/httpbind"><iq type="set" id="f" to="localhost"><session xmlns="urn:ietf:params:xml:ns:xmpp-session"/></iq></body>
+
+[1:4016:0] 2012-07-05 18:37:17 - [[XMPPGet]] 
+<body xmlns='http://jabber.org/protocol/httpbind'><iq xmlns="jabber:client" type="error" id="f" to="terry@mobicloud/jaxl.1.1341513437" from="localhost"><session xmlns="urn:ietf:params:xml:ns:xmpp-session"/><error code="404" type="cancel"><remote-server-not-found xmlns="urn:ietf:params:xml:ns:xmpp-stanzas"/></error></iq></body>
+
+[1:4016:0] 2012-07-05 18:42:45 - [[XMPPSend]] body
+<body content='text/xml; charset=utf-8' hold='1' xmlns='http://jabber.org/protocol/httpbind' wait='30' rid='3076' version='1.6' polling='0' secure='1' xmlns:xmpp='urn:xmpp:xbosh' to='localhost' route='xmpp:localhost:7070' xmpp:version='1.0'/>
+
+[1:4016:0] 2012-07-05 18:42:45 - [[XMPPGet]] 
+<body xmlns="http://jabber.org/protocol/httpbind" xmlns:stream="http://etherx.jabber.org/streams" authid="2df8d364" sid="2df8d364" secure="true" requests="2" inactivity="30" polling="5" wait="30"><stream:features><mechanisms xmlns="urn:ietf:params:xml:ns:xmpp-sasl"><mechanism>DIGEST-MD5</mechanism><mechanism>PLAIN</mechanism><mechanism>ANONYMOUS</mechanism><mechanism>CRAM-MD5</mechanism></mechanisms><compression xmlns="http://jabber.org/features/compress"><method>zlib</method></compression><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"/><session xmlns="urn:ietf:params:xml:ns:xmpp-session"/></stream:features></body>
+
+[1:4016:0] 2012-07-05 18:42:45 - [[XMPPSend]] Performing Auth type: PLAIN
+
+[1:4016:0] 2012-07-05 18:42:45 - [[XMPPSend]] body
+<body rid="3077" sid="2df8d364" xmlns="http://jabber.org/protocol/httpbind"><auth xmlns="urn:ietf:params:xml:ns:xmpp-sasl" mechanism="PLAIN">AHRlcgB0ZXI=</auth></body>
+
+[1:4016:0] 2012-07-05 18:42:45 - [[XMPPGet]] 
+<body xmlns='http://jabber.org/protocol/httpbind'><failure xmlns="urn:ietf:params:xml:ns:xmpp-sasl"><not-authorized/></failure></body>
+
+[1:4016:0] 2012-07-05 18:42:45 - [[XMPPGet]] Unable to complete SASL Auth, see logs for detail...
+
+[1:4016:0] 2012-07-05 18:42:45 - [[JAXL]] Shutting down ...
+
+[1:4016:0] 2012-07-05 18:45:42 - [[XMPPSend]] body
+<body content='text/xml; charset=utf-8' hold='1' xmlns='http://jabber.org/protocol/httpbind' wait='30' rid='3078' version='1.6' polling='0' secure='1' xmlns:xmpp='urn:xmpp:xbosh' to='localhost' route='xmpp:localhost:7070' xmpp:version='1.0'/>
+
+[1:4016:0] 2012-07-05 18:45:42 - [[XMPPGet]] 
+<body xmlns="http://jabber.org/protocol/httpbind" xmlns:stream="http://etherx.jabber.org/streams" authid="cdc2b77c" sid="cdc2b77c" secure="true" requests="2" inactivity="30" polling="5" wait="30"><stream:features><mechanisms xmlns="urn:ietf:params:xml:ns:xmpp-sasl"><mechanism>DIGEST-MD5</mechanism><mechanism>PLAIN</mechanism><mechanism>ANONYMOUS</mechanism><mechanism>CRAM-MD5</mechanism></mechanisms><compression xmlns="http://jabber.org/features/compress"><method>zlib</method></compression><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"/><session xmlns="urn:ietf:params:xml:ns:xmpp-session"/></stream:features></body>
+
+[1:4016:0] 2012-07-05 18:45:42 - [[XMPPSend]] Performing Auth type: PLAIN
+
+[1:4016:0] 2012-07-05 18:45:42 - [[XMPPSend]] body
+<body rid="3079" sid="cdc2b77c" xmlns="http://jabber.org/protocol/httpbind"><auth xmlns="urn:ietf:params:xml:ns:xmpp-sasl" mechanism="PLAIN">AHRlcnJ5AHRlcnJ5</auth></body>
+
+[1:4016:0] 2012-07-05 18:45:42 - [[XMPPGet]] 
+<body xmlns='http://jabber.org/protocol/httpbind'><success xmlns="urn:ietf:params:xml:ns:xmpp-sasl"/></body>
+
+[1:4016:0] 2012-07-05 18:45:42 - [[XMPPSend]] body
+<body rid='3080' sid='cdc2b77c' xmlns='http://jabber.org/protocol/httpbind' to='localhost' xmpp:restart='true' xmlns:xmpp='urn:xmpp:xbosh'/>
+
+[1:4016:0] 2012-07-05 18:45:42 - [[XMPPGet]] 
+<body xmlns="http://jabber.org/protocol/httpbind" xmlns:stream="http://etherx.jabber.org/streams"><stream:features><compression xmlns="http://jabber.org/features/compress"><method>zlib</method></compression><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"/><session xmlns="urn:ietf:params:xml:ns:xmpp-session"/></stream:features></body>
+
+[1:4016:0] 2012-07-05 18:45:42 - [[XMPPSend]] body
+<body rid="3081" sid="cdc2b77c" xmlns="http://jabber.org/protocol/httpbind"><iq type="set" id="10"><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"><resource>jaxl.1.1341513942</resource></bind></iq></body>
+
+[1:4016:0] 2012-07-05 18:45:42 - [[XMPPGet]] 
+<body xmlns='http://jabber.org/protocol/httpbind'><iq xmlns="jabber:client" type="result" id="10" to="mobicloud/cdc2b77c"><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"><jid>terry@mobicloud/jaxl.1.1341513942</jid></bind></iq></body>
+
+[1:4016:0] 2012-07-05 18:45:42 - [[XMPPSend]] body
+<body rid="3082" sid="cdc2b77c" xmlns="http://jabber.org/protocol/httpbind"><iq type="set" id="11" to="localhost"><session xmlns="urn:ietf:params:xml:ns:xmpp-session"/></iq></body>
+
+[1:4016:0] 2012-07-05 18:45:42 - [[XMPPGet]] 
+<body xmlns='http://jabber.org/protocol/httpbind'><iq xmlns="jabber:client" type="error" id="11" to="terry@mobicloud/jaxl.1.1341513942" from="localhost"><session xmlns="urn:ietf:params:xml:ns:xmpp-session"/><error code="404" type="cancel"><remote-server-not-found xmlns="urn:ietf:params:xml:ns:xmpp-stanzas"/></error></iq></body>
+
+[1:2360:0] 2012-07-05 19:22:45 - [[JAXL]] No callbacks for shutdown
+
+[1:2360:0] 2012-07-05 20:16:20 - [[JAXL]] No callbacks for shutdown
+
+[1:2360:0] 2012-07-05 20:54:42 - [[JAXL]] No callbacks for shutdown
+
+[1:1400:0] 2012-07-05 22:21:23 - [[JAXL]] No callbacks for shutdown
+
+[1:4860:0] 2012-07-05 23:09:03 - [[JAXL]] No callbacks for shutdown
+
+[1:4860:0] 2012-07-05 23:30:20 - [[JAXL]] No callbacks for shutdown
+
+[1:4860:0] 2012-07-05 23:30:53 - [[XMPPSend]] body
+<body content='text/xml; charset=utf-8' hold='1' xmlns='http://jabber.org/protocol/httpbind' wait='30' rid='8538' version='1.6' polling='0' secure='1' xmlns:xmpp='urn:xmpp:xbosh' to='localhost' route='xmpp:localhost:7070' xmpp:version='1.0'/>
+
+[1:4860:0] 2012-07-05 23:30:53 - [[XMPPGet]] 
+<body xmlns="http://jabber.org/protocol/httpbind" xmlns:stream="http://etherx.jabber.org/streams" authid="10bb3a9e" sid="10bb3a9e" secure="true" requests="2" inactivity="30" polling="5" wait="30"><stream:features><mechanisms xmlns="urn:ietf:params:xml:ns:xmpp-sasl"><mechanism>DIGEST-MD5</mechanism><mechanism>PLAIN</mechanism><mechanism>ANONYMOUS</mechanism><mechanism>CRAM-MD5</mechanism></mechanisms><compression xmlns="http://jabber.org/features/compress"><method>zlib</method></compression><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"/><session xmlns="urn:ietf:params:xml:ns:xmpp-session"/></stream:features></body>
+
+[1:4860:0] 2012-07-05 23:30:53 - [[XMPPSend]] Performing Auth type: PLAIN
+
+[1:4860:0] 2012-07-05 23:30:53 - [[XMPPSend]] body
+<body rid="8539" sid="10bb3a9e" xmlns="http://jabber.org/protocol/httpbind"><auth xmlns="urn:ietf:params:xml:ns:xmpp-sasl" mechanism="PLAIN">AHRlcnJ5AHRlcnJ5</auth></body>
+
+[1:4860:0] 2012-07-05 23:30:53 - [[XMPPGet]] 
+<body xmlns='http://jabber.org/protocol/httpbind'><success xmlns="urn:ietf:params:xml:ns:xmpp-sasl"/></body>
+
+[1:4860:0] 2012-07-05 23:30:53 - [[XMPPSend]] body
+<body rid='8540' sid='10bb3a9e' xmlns='http://jabber.org/protocol/httpbind' to='localhost' xmpp:restart='true' xmlns:xmpp='urn:xmpp:xbosh'/>
+
+[1:4860:0] 2012-07-05 23:30:53 - [[XMPPGet]] 
+<body xmlns="http://jabber.org/protocol/httpbind" xmlns:stream="http://etherx.jabber.org/streams"><stream:features><compression xmlns="http://jabber.org/features/compress"><method>zlib</method></compression><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"/><session xmlns="urn:ietf:params:xml:ns:xmpp-session"/></stream:features></body>
+
+[1:4860:0] 2012-07-05 23:30:53 - [[XMPPSend]] body
+<body rid="8541" sid="10bb3a9e" xmlns="http://jabber.org/protocol/httpbind"><iq type="set" id="a"><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"><resource>jaxl.1.1341531053</resource></bind></iq></body>
+
+[1:4860:0] 2012-07-05 23:30:53 - [[XMPPGet]] 
+<body xmlns='http://jabber.org/protocol/httpbind'><iq xmlns="jabber:client" type="result" id="a" to="mobicloud/10bb3a9e"><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"><jid>terry@mobicloud/jaxl.1.1341531053</jid></bind></iq></body>
+
+[1:4860:0] 2012-07-05 23:30:53 - [[XMPPSend]] body
+<body rid="8542" sid="10bb3a9e" xmlns="http://jabber.org/protocol/httpbind"><iq type="set" id="b" to="localhost"><session xmlns="urn:ietf:params:xml:ns:xmpp-session"/></iq></body>
+
+[1:4860:0] 2012-07-05 23:30:53 - [[XMPPGet]] 
+<body xmlns='http://jabber.org/protocol/httpbind'><iq xmlns="jabber:client" type="error" id="b" to="terry@mobicloud/jaxl.1.1341531053" from="localhost"><session xmlns="urn:ietf:params:xml:ns:xmpp-session"/><error code="404" type="cancel"><remote-server-not-found xmlns="urn:ietf:params:xml:ns:xmpp-stanzas"/></error></iq></body>
+
+[1:4860:0] 2012-07-05 23:31:48 - [[XMPPSend]] body
+<body content='text/xml; charset=utf-8' hold='1' xmlns='http://jabber.org/protocol/httpbind' wait='30' rid='8543' version='1.6' polling='0' secure='1' xmlns:xmpp='urn:xmpp:xbosh' to='localhost' route='xmpp:localhost:7070' xmpp:version='1.0'/>
+
+[1:4860:0] 2012-07-05 23:31:48 - [[XMPPGet]] 
+<body xmlns="http://jabber.org/protocol/httpbind" xmlns:stream="http://etherx.jabber.org/streams" authid="7e9db414" sid="7e9db414" secure="true" requests="2" inactivity="30" polling="5" wait="30"><stream:features><mechanisms xmlns="urn:ietf:params:xml:ns:xmpp-sasl"><mechanism>DIGEST-MD5</mechanism><mechanism>PLAIN</mechanism><mechanism>ANONYMOUS</mechanism><mechanism>CRAM-MD5</mechanism></mechanisms><compression xmlns="http://jabber.org/features/compress"><method>zlib</method></compression><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"/><session xmlns="urn:ietf:params:xml:ns:xmpp-session"/></stream:features></body>
+
+[1:4860:0] 2012-07-05 23:31:48 - [[XMPPSend]] Performing Auth type: PLAIN
+
+[1:4860:0] 2012-07-05 23:31:48 - [[XMPPSend]] body
+<body rid="8544" sid="7e9db414" xmlns="http://jabber.org/protocol/httpbind"><auth xmlns="urn:ietf:params:xml:ns:xmpp-sasl" mechanism="PLAIN">AHRlcnJ5QG1vYmljbG91ZAB0ZXJyeQ==</auth></body>
+
+[1:4860:0] 2012-07-05 23:31:48 - [[XMPPGet]] 
+<body xmlns='http://jabber.org/protocol/httpbind'><success xmlns="urn:ietf:params:xml:ns:xmpp-sasl"/></body>
+
+[1:4860:0] 2012-07-05 23:31:48 - [[XMPPSend]] body
+<body rid='8545' sid='7e9db414' xmlns='http://jabber.org/protocol/httpbind' to='localhost' xmpp:restart='true' xmlns:xmpp='urn:xmpp:xbosh'/>
+
+[1:4860:0] 2012-07-05 23:31:48 - [[XMPPGet]] 
+<body xmlns="http://jabber.org/protocol/httpbind" xmlns:stream="http://etherx.jabber.org/streams"><stream:features><compression xmlns="http://jabber.org/features/compress"><method>zlib</method></compression><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"/><session xmlns="urn:ietf:params:xml:ns:xmpp-session"/></stream:features></body>
+
+[1:4860:0] 2012-07-05 23:31:48 - [[XMPPSend]] body
+<body rid="8546" sid="7e9db414" xmlns="http://jabber.org/protocol/httpbind"><iq type="set" id="c"><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"><resource>jaxl.1.1341531108</resource></bind></iq></body>
+
+[1:4860:0] 2012-07-05 23:31:48 - [[XMPPGet]] 
+<body xmlns='http://jabber.org/protocol/httpbind'><iq xmlns="jabber:client" type="result" id="c" to="mobicloud/7e9db414"><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"><jid>terry@mobicloud/jaxl.1.1341531108</jid></bind></iq></body>
+
+[1:4860:0] 2012-07-05 23:31:48 - [[XMPPSend]] body
+<body rid="8547" sid="7e9db414" xmlns="http://jabber.org/protocol/httpbind"><iq type="set" id="d" to="localhost"><session xmlns="urn:ietf:params:xml:ns:xmpp-session"/></iq></body>
+
+[1:4860:0] 2012-07-05 23:31:48 - [[XMPPGet]] 
+<body xmlns='http://jabber.org/protocol/httpbind'><iq xmlns="jabber:client" type="error" id="d" to="terry@mobicloud/jaxl.1.1341531108" from="localhost"><session xmlns="urn:ietf:params:xml:ns:xmpp-session"/><error code="404" type="cancel"><remote-server-not-found xmlns="urn:ietf:params:xml:ns:xmpp-stanzas"/></error></iq></body>
+
+[1:4860:0] 2012-07-05 23:34:07 - [[XMPPSend]] body
+<body content='text/xml; charset=utf-8' hold='1' xmlns='http://jabber.org/protocol/httpbind' wait='30' rid='8548' version='1.6' polling='0' secure='1' xmlns:xmpp='urn:xmpp:xbosh' to='localhost' route='xmpp:localhost:7070' xmpp:version='1.0'/>
+
+[1:4860:0] 2012-07-05 23:34:07 - [[XMPPGet]] 
+<body xmlns="http://jabber.org/protocol/httpbind" xmlns:stream="http://etherx.jabber.org/streams" authid="7d91996" sid="7d91996" secure="true" requests="2" inactivity="30" polling="5" wait="30"><stream:features><mechanisms xmlns="urn:ietf:params:xml:ns:xmpp-sasl"><mechanism>DIGEST-MD5</mechanism><mechanism>PLAIN</mechanism><mechanism>ANONYMOUS</mechanism><mechanism>CRAM-MD5</mechanism></mechanisms><compression xmlns="http://jabber.org/features/compress"><method>zlib</method></compression><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"/><session xmlns="urn:ietf:params:xml:ns:xmpp-session"/></stream:features></body>
+
+[1:4860:0] 2012-07-05 23:34:07 - [[XMPPSend]] Performing Auth type: PLAIN
+
+[1:4860:0] 2012-07-05 23:34:07 - [[XMPPSend]] body
+<body rid="8549" sid="7d91996" xmlns="http://jabber.org/protocol/httpbind"><auth xmlns="urn:ietf:params:xml:ns:xmpp-sasl" mechanism="PLAIN">AHRlcnJ5QG1vYmljbG91ZAB0ZXJyeQ==</auth></body>
+
+[1:4860:0] 2012-07-05 23:34:07 - [[XMPPGet]] 
+<body xmlns='http://jabber.org/protocol/httpbind'><success xmlns="urn:ietf:params:xml:ns:xmpp-sasl"/></body>
+
+[1:4860:0] 2012-07-05 23:34:07 - [[XMPPSend]] body
+<body rid='8550' sid='7d91996' xmlns='http://jabber.org/protocol/httpbind' to='localhost' xmpp:restart='true' xmlns:xmpp='urn:xmpp:xbosh'/>
+
+[1:4860:0] 2012-07-05 23:34:07 - [[XMPPGet]] 
+<body xmlns="http://jabber.org/protocol/httpbind" xmlns:stream="http://etherx.jabber.org/streams"><stream:features><compression xmlns="http://jabber.org/features/compress"><method>zlib</method></compression><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"/><session xmlns="urn:ietf:params:xml:ns:xmpp-session"/></stream:features></body>
+
+[1:4860:0] 2012-07-05 23:34:07 - [[XMPPSend]] body
+<body rid="8551" sid="7d91996" xmlns="http://jabber.org/protocol/httpbind"><iq type="set" id="e"><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"><resource>jaxl.1.1341531230</resource></bind></iq></body>
+
+[1:4860:0] 2012-07-05 23:34:07 - [[XMPPGet]] 
+<body xmlns='http://jabber.org/protocol/httpbind'><iq xmlns="jabber:client" type="result" id="e" to="mobicloud/7d91996"><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"><jid>terry@mobicloud/jaxl.1.1341531230</jid></bind></iq></body>
+
+[1:4860:0] 2012-07-05 23:34:07 - [[XMPPSend]] body
+<body rid="8552" sid="7d91996" xmlns="http://jabber.org/protocol/httpbind"><iq type="set" id="f" to="localhost"><session xmlns="urn:ietf:params:xml:ns:xmpp-session"/></iq></body>
+
+[1:4860:0] 2012-07-05 23:34:07 - [[XMPPGet]] 
+<body xmlns='http://jabber.org/protocol/httpbind'><iq xmlns="jabber:client" type="error" id="f" to="terry@mobicloud/jaxl.1.1341531230" from="localhost"><session xmlns="urn:ietf:params:xml:ns:xmpp-session"/><error code="404" type="cancel"><remote-server-not-found xmlns="urn:ietf:params:xml:ns:xmpp-stanzas"/></error></iq></body>
+
+[1:4860:0] 2012-07-05 23:40:59 - [[XMPPSend]] body
+<body content='text/xml; charset=utf-8' hold='1' xmlns='http://jabber.org/protocol/httpbind' wait='30' rid='8553' version='1.6' polling='0' secure='1' xmlns:xmpp='urn:xmpp:xbosh' to='localhost' route='xmpp:localhost:7070' xmpp:version='1.0'/>
+
+[1:4860:0] 2012-07-05 23:40:59 - [[XMPPGet]] 
+<body xmlns="http://jabber.org/protocol/httpbind" xmlns:stream="http://etherx.jabber.org/streams" authid="680c22e3" sid="680c22e3" secure="true" requests="2" inactivity="30" polling="5" wait="30"><stream:features><mechanisms xmlns="urn:ietf:params:xml:ns:xmpp-sasl"><mechanism>DIGEST-MD5</mechanism><mechanism>PLAIN</mechanism><mechanism>ANONYMOUS</mechanism><mechanism>CRAM-MD5</mechanism></mechanisms><compression xmlns="http://jabber.org/features/compress"><method>zlib</method></compression><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"/><session xmlns="urn:ietf:params:xml:ns:xmpp-session"/></stream:features></body>
+
+[1:4860:0] 2012-07-05 23:40:59 - [[XMPPSend]] Performing Auth type: PLAIN
+
+[1:4860:0] 2012-07-05 23:40:59 - [[XMPPSend]] body
+<body rid="8554" sid="680c22e3" xmlns="http://jabber.org/protocol/httpbind"><auth xmlns="urn:ietf:params:xml:ns:xmpp-sasl" mechanism="PLAIN">AHRlcnJ5QG1vYmljbG91ZAB0ZXJyeQ==</auth></body>
+
+[1:4860:0] 2012-07-05 23:40:59 - [[XMPPGet]] 
+<body xmlns='http://jabber.org/protocol/httpbind'><success xmlns="urn:ietf:params:xml:ns:xmpp-sasl"/></body>
+
+[1:4860:0] 2012-07-05 23:40:59 - [[XMPPSend]] body
+<body rid='8555' sid='680c22e3' xmlns='http://jabber.org/protocol/httpbind' to='localhost' xmpp:restart='true' xmlns:xmpp='urn:xmpp:xbosh'/>
+
+[1:4860:0] 2012-07-05 23:40:59 - [[XMPPGet]] 
+<body xmlns="http://jabber.org/protocol/httpbind" xmlns:stream="http://etherx.jabber.org/streams"><stream:features><compression xmlns="http://jabber.org/features/compress"><method>zlib</method></compression><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"/><session xmlns="urn:ietf:params:xml:ns:xmpp-session"/></stream:features></body>
+
+[1:4860:0] 2012-07-05 23:40:59 - [[XMPPSend]] body
+<body rid="8556" sid="680c22e3" xmlns="http://jabber.org/protocol/httpbind"><iq type="set" id="10"><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"><resource>jaxl.1.1341531621</resource></bind></iq></body>
+
+[1:4860:0] 2012-07-05 23:40:59 - [[XMPPGet]] 
+<body xmlns='http://jabber.org/protocol/httpbind'><iq xmlns="jabber:client" type="result" id="10" to="mobicloud/680c22e3"><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"><jid>terry@mobicloud/jaxl.1.1341531621</jid></bind></iq></body>
+
+[1:4860:0] 2012-07-05 23:40:59 - [[XMPPSend]] body
+<body rid="8557" sid="680c22e3" xmlns="http://jabber.org/protocol/httpbind"><iq type="set" id="11" to="localhost"><session xmlns="urn:ietf:params:xml:ns:xmpp-session"/></iq></body>
+
+[1:4860:0] 2012-07-05 23:40:59 - [[XMPPGet]] 
+<body xmlns='http://jabber.org/protocol/httpbind'><iq xmlns="jabber:client" type="error" id="11" to="terry@mobicloud/jaxl.1.1341531621" from="localhost"><session xmlns="urn:ietf:params:xml:ns:xmpp-session"/><error code="404" type="cancel"><remote-server-not-found xmlns="urn:ietf:params:xml:ns:xmpp-stanzas"/></error></iq></body>
+
+[1:4860:0] 2012-07-05 23:59:36 - [[JAXL]] No callbacks for shutdown
+
+[1:4860:0] 2012-07-06 00:04:05 - [[JAXL]] No callbacks for shutdown
+
+[1:4860:0] 2012-07-06 00:08:22 - [[JAXL]] No callbacks for shutdown
+
+[1:4860:0] 2012-07-06 00:08:38 - [[JAXL]] No callbacks for shutdown
+
+[1:4956:0] 2012-07-06 01:22:34 - [[JAXL]] No callbacks for shutdown
+
+[1:4956:0] 2012-07-06 01:22:45 - [[JAXL]] No callbacks for shutdown
+
+[1:924:0] 2012-07-09 19:32:33 - [[JAXL]] No callbacks for shutdown
+
+[1:4436:0] 2012-07-10 23:03:59 - [[JAXL]] No callbacks for shutdown
+
+[1:4436:0] 2012-07-10 23:05:49 - [[JAXL]] No callbacks for shutdown
+

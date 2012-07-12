@@ -1,0 +1,16 @@
+xmpp_stream:112 - 2012-07-03 23:40:04 - calling setup for event connect
+xmpp_stream:112 - 2012-07-03 23:40:04 - calling setup for event connect
+jaxl_socket:104 - 2012-07-03 23:40:14 - unable to connect tcp://mobicloud:5222 with error no: 10060, error str: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+
+xmpp_stream:125 - 2012-07-03 23:40:14 - current state disconnected
+jaxl_socket:104 - 2012-07-03 23:40:14 - unable to connect tcp://mobicloud:5222 with error no: 10060, error str: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+
+xmpp_stream:125 - 2012-07-03 23:40:14 - current state disconnected
+xmpp_stream:112 - 2012-07-03 23:44:30 - calling setup for event connect
+jaxl_socket:104 - 2012-07-03 23:44:40 - unable to connect tcp://mobicloud:5222 with error no: 10060, error str: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+
+xmpp_stream:125 - 2012-07-03 23:44:40 - current state disconnected
+xmpp_stream:112 - 2012-07-04 00:17:34 - calling setup for event connect
+jaxl_socket:104 - 2012-07-04 00:17:44 - unable to connect tcp://mobicloud:5222 with error no: 10060, error str: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+
+xmpp_stream:125 - 2012-07-04 00:17:44 - current state disconnected
