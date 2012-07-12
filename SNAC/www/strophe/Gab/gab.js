@@ -230,6 +230,7 @@ var Gab = {
 };
 
 $(document).ready(function () {
+    //MY CODE
     //Added code to logout on exit
     window.onbeforeunload = function() {
         Gab.connection.disconnect();
@@ -237,7 +238,8 @@ $(document).ready(function () {
         alert('Handler for .unload() called.');
     };
 
-    //Original code
+    //END OF MY CODE
+
     $('#login_dialog').dialog({
         autoOpen: true,
         draggable: false,
@@ -415,48 +417,51 @@ $(document).bind('connect', function (ev, data) {
         if (status === Strophe.Status.ERROR)
         {
             $("body").removeClass("loading");
+            $("#login_dialog p").text("Undefined error!");
             $(document).trigger('disconnected');
-            alert("ERROR!");
         }
         else if (status === Strophe.Status.CONNECTING)
         {
             $("body").addClass("loading");
+            $("#status").text("Connecting...");
         }
         else if (status === Strophe.Status.CONNFAIL)
         {
             $("body").removeClass("loading");
+            $("#login_dialog p").text("Connection Failure: Possible reasons: a) Server is down. 2) Invalid username.");
             $('#login_dialog').dialog('open');
-            alert("CONNFAIL! Either server is down or your username is incorrect!");
 
         }
         else if (status === Strophe.Status.AUTHENTICATING)
         {
-            alert("AUTHENTICATING!");
+            $("#status").text("Authenticating...");
         }
         else if (status === Strophe.Status.AUTHFAIL)
         {
             $("body").removeClass("loading");
+            $("#login_dialog p").text("Authentication Fail: Invalid password!");
             $(document).trigger('disconnected');
-            alert("AUTHFAIL!");
         }
         else if (status === Strophe.Status.CONNECTED) {
-            $("body").removeClass("loading");
-            alert("sid: "+conn.sid+"|| rid: "+conn.rid+"|| jid: "+conn.jid); 
+            $("#login_dialog p").text("");
+            // alert("sid: "+conn.sid+"|| rid: "+conn.rid+"|| jid: "+conn.jid); 
             $(document).trigger('connected');
+            
         } 
         else if (status === Strophe.Status.DISCONNECTED) 
         {
             $("body").removeClass("loading");
             $(document).trigger('disconnected');
-            alert("DISCONNECTED!");
         }   
         else if (status === Strophe.Status.DISCONNECTING)
         {
+            $("#status").text("Disconnecting...");
             $("body").addClass("loading");
         }
         else if (status === Strophe.Status.ATTACHED)
         {
-            alert("ATTACHED!");
+            // Not sure what this means yet
+            $("#status").text("ATTACHED!");
         }
     });
 
@@ -464,7 +469,7 @@ $(document).bind('connect', function (ev, data) {
 });
 
 $(document).bind('connected', function () {
-    var iq = $iq({type: 'get'}).c('query', {xmlns: 'jabber:iq:roster'});alert(iq);
+    var iq = $iq({type: 'get'}).c('query', {xmlns: 'jabber:iq:roster'});
     Gab.connection.sendIQ(iq, Gab.on_roster);
 
     Gab.connection.addHandler(Gab.on_roster_changed,
@@ -472,6 +477,9 @@ $(document).bind('connected', function () {
 
     Gab.connection.addHandler(Gab.on_message,
                               null, "message", "chat");
+    // This is to avoid the user from disconnecting before receiving 
+    // the "Connected" status. This also enhances user interace
+    setTimeout(function(){$("body").removeClass("loading");},1000);
 });
 
 $(document).bind('disconnected', function () {

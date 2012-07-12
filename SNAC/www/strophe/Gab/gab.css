@@ -89,7 +89,7 @@ h1 {
     color: #ccc;
 }
 
-/* LOADING ANIMATION
+/* MY CSS FOR LOADING ANIMATION AND ERROR MESSAGES
     Start by setting display:none to make this hidden.
    Then we position it in relation to the viewport window
    with position:fixed. Width, height, top and left speak
@@ -119,4 +119,18 @@ body.loading {
    modal element will be visible */
 body.loading .modal {
     display: block;
+}
+
+body.loading .modal #status{
+    position:   fixed;
+    z-index:    1000;
+    top:        52%;
+    left:       47.25%;
+    height:     100%;
+    width:      100%;
+}
+
+#login_dialog p{
+    color:red;
+    font-size:75%;
 }
