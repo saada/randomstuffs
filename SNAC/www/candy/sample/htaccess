@@ -1,4 +1,0 @@
-AddDefaultCharset UTF-8
-Options +MultiViews
-RewriteEngine On
-RewriteRule http-bind/ http://localhost:7070/http-bind/ [P]
