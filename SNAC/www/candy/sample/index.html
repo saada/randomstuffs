@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Candy - Chats are not dead yet</title>
+	<link rel="shortcut icon" href="../res/img/favicon.png" type="image/gif" />
+	<link rel="stylesheet" type="text/css" href="../res/default.css" />
+	<!-- My added CSS -->
+	<style>
+		h1{
+			color:teal;
+		}
+		p{
+			color:lightblue;
+		}
+		form{
+			color:white;
+		}
+	</style>
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script type="text/javascript" src="../libs/libs.min.js"></script>
+	<script type="text/javascript" src="../candy.min.js"></script>
+	<script type="text/javascript">
+
+		$(document).ready(function() {
+			// initialize connection object
+			Candy.init( 'http-bind/', {
+				core: {
+					debug: true,
+					autojoin: ['lobby@conference.mobicloud', 'lobby@conference.mobicloud']
+				}, 
+				view: {
+					language: 'en',
+					resources:'res/'
+				}
+			});
+			
+			// Candy.Core.connect();
+			// Show custom login form
+			Candy.View.Pane.Chat.Modal.showLoginForm(
+				"<h1>Welcome to Mobicloud!</h1>"
+				+"<p>Please include your domain (e.g. @mobicloud) in your username.</p>"
+				,"");
+
+			// My functions
+			var sendMessage = function()
+			{
+				Candy.Core.getConnection().muc.message(Candy.Util.escapeJid("lobby@conference.mobicloud/terry"), undefined, "Message from sendMessage()", "chat");
+			};
+			sendMessage();
+
+		});
+	</script>
+</head>
+<body>
+	<div id="candy"></div>
+</body>
+</html>
