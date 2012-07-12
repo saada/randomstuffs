@@ -1,0 +1,26 @@
+#page {
+	color: teal;
+	font-family: Trebuchet MS;
+	font-weight: normal;
+	font-size:25;
+	padding: 5% 20% 10% 10%;
+}
+
+#page h1 { 
+	text-align: center;
+	font-size: 200%;
+	text-transform: capitalize;
+	border: dashed;
+	/*padding: 10;*/
+	display:inline-block;
+}
+
+#page h2 { 
+	text-align: right;
+	font-size: 90%;
+	text-transform: capitalize;
+}
+
+#page p { 
+	font-size: 75%;
+}
