@@ -1,9 +1,14 @@
 body {
     font-family: Helvetica;
+    color:teal;
 }
 
 h1 {
     text-align: center;
+}
+
+p{
+    font-weight: bold;
 }
 
 .hidden {
@@ -122,12 +127,9 @@ body.loading .modal {
 }
 
 body.loading .modal #status{
-    position:   fixed;
-    z-index:    1000;
+    text-align: center;
+    position:   relative;
     top:        52%;
-    left:       47.25%;
-    height:     100%;
-    width:      100%;
 }
 
 #login_dialog p{

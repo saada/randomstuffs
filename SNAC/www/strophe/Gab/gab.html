@@ -17,32 +17,37 @@
   </head>
   <body>
     <h1>Mobicloud Chat Client</h1>
+    <p id="logged_username" class="hidden">login</p>
 
-    <div id='toolbar'>
+    <div id='toolbar' class='hidden'>
       <span class='button' id='new-contact'>add contact...</span> ||
       <span class='button' id='new-chat'>chat with...</span> ||
       <span class='button' id='disconnect'>disconnect</span>
     </div>
 
-    <div id='chat-area'>
+    <div id='chat-area' class='hidden'>
       <ul></ul>
     </div>
     
-    <div id='roster-area'>
+    <div id='roster-area' class='hidden'>
       <ul></ul>
     </div>
 
     <!-- login dialog -->
     <div id='login_dialog' class='hidden'>
       <p></p>
-      <label>JID:</label><input type='text' id='jid'>
-      <label>Password:</label><input type='password' id='password'>
+      <label>JID:</label><br/>
+      <input type='text' id='jid'><br/>
+      <label>Password:</label><br/>
+      <input type='password' id='password'><br/>
     </div>
 
     <!-- contact dialog -->
     <div id='contact_dialog' class='hidden'>
-      <label>JID:</label><input type='text' id='contact-jid'>
-      <label>Name:</label><input type='text' id='contact-name'>
+      <label>JID:</label>
+      <input type='text' id='contact-jid'>
+      <label>Name:</label>
+      <input type='text' id='contact-name'>
     </div>
 
     <!-- chat dialog -->

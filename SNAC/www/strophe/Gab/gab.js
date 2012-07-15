@@ -231,20 +231,24 @@ var Gab = {
 
 $(document).ready(function () {
     //MY CODE
-    //Added code to logout on exit
+    //Added code to logout on exit NOT FUNCTIONING
     window.onbeforeunload = function() {
         Gab.connection.disconnect();
         Gab.connection = null;
         alert('Handler for .unload() called.');
     };
 
+    
+    
     //END OF MY CODE
 
     $('#login_dialog').dialog({
+        title: 'Mobicloud Login',
+        width:230,
         autoOpen: true,
         draggable: false,
+        resizable: false,
         modal: true,
-        title: 'Connect to XMPP',
         buttons: {
             "Connect": function () {
                 $(document).trigger('connect', {
@@ -254,9 +258,24 @@ $(document).ready(function () {
                 
                 $('#password').val('');
                 $(this).dialog('close');
+                // console.log("Connecting...");
             }
-        }
+        },
+        open: function(event, ui) {
+            $("#jid").focus();
+            $(".ui-dialog-titlebar-close").hide();
+        },
+        closeOnEscape:false
     });
+
+    //ENTER key binding
+    $('#login_dialog').keyup(function(e){
+        if (e.keyCode == $.ui.keyCode.ENTER) {
+            $(this).parent().find("button:eq(0)").trigger("click");
+            e.preventDefault();
+            return false;
+        }
+      });
 
     $('#contact_dialog').dialog({
         autoOpen: false,
@@ -410,6 +429,7 @@ $(document).ready(function () {
 $(document).bind('connect', function (ev, data) {
     var conn = new Strophe.Connection(
         'http://localhost:7070/http-bind/');
+    $("#logged_username").text("Logged in as: "+data.jid);
 
     conn.connect(data.jid, data.password, function (status) {
         
@@ -439,17 +459,18 @@ $(document).bind('connect', function (ev, data) {
         else if (status === Strophe.Status.AUTHFAIL)
         {
             $("body").removeClass("loading");
-            $("#login_dialog p").text("Authentication Fail: Invalid password!");
+            $("#login_dialog p").text("Authentication Fail: Invalid username/password!");
             $(document).trigger('disconnected');
         }
         else if (status === Strophe.Status.CONNECTED) {
-            $("#login_dialog p").text("");
+            $("#toolbar, #chat-area, #roster-area, #logged_username").removeClass("hidden");
             // alert("sid: "+conn.sid+"|| rid: "+conn.rid+"|| jid: "+conn.jid); 
             $(document).trigger('connected');
             
         } 
         else if (status === Strophe.Status.DISCONNECTED) 
         {
+            $("#toolbar, #chat-area, #roster-area, #logged_username").addClass("hidden");
             $("body").removeClass("loading");
             $(document).trigger('disconnected');
         }   
