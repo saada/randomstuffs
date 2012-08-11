@@ -13,9 +13,9 @@ For rails generators, use:
 [CLICK HERE](bit.ly/rails_tutorial_gemfile)
 
 ## Undo a Rails Generation:  
-After using
+After using  
 	rails generate controller ControllerName child1 child2
-We undo with this:
+We undo with this:  
 	rails destroy controller ControllerName child1 child2
 
 ## Migrate database
