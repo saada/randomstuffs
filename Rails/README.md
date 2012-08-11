@@ -17,3 +17,6 @@ After using
 	rails generate controller ControllerName child1 child2
 We undo with this:
 	rails destroy controller ControllerName child1 child2
+
+## Migrate database
+	rake db:migrate
