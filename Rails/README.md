@@ -7,4 +7,4 @@ Create app without test folder (since I'm using RSPEC):
 
 Sample Gemfile:  
 ---------------
-	[CLICK HERE](bit.ly/rails_tutorial_gemfile)
+[CLICK HERE](bit.ly/rails_tutorial_gemfile)
