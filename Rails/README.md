@@ -9,6 +9,9 @@ My Rails Development Cheatsheet
 For rails generators, use:
 	rails generate controller ControllerName child1 child2 --no-test-framework
 
+To generate rspec tests:  
+	rails generate integration_test name_of_test
+
 ## Sample Gemfile:  
 [CLICK HERE](bit.ly/rails_tutorial_gemfile)
 
