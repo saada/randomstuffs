@@ -6,11 +6,12 @@ My Rails Development Cheatsheet
 
 ## Create app without test folder (since I'm using RSPEC):  
 	rails new app_name --skip-test-unit
-For rails generators, use:
+For rails generators, use:  
 	rails generate controller ControllerName child1 child2 --no-test-framework
-
 To generate rspec tests:  
 	rails generate integration_test name_of_test
+Prepare a test database:  
+	rake db:test:prepare
 
 ## Sample Gemfile:  
 [CLICK HERE](bit.ly/rails_tutorial_gemfile)
