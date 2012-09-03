@@ -13,6 +13,11 @@ To generate rspec tests:
 Prepare a test database:  
 	rake db:test:prepare
 
+## Cucumber, to use without bundle exec:  
+	bundle --binstubs=./bundler_stubs
+## Cucumber generate:  
+	rails g cucumber:install
+
 ## Sample Gemfile:  
 [CLICK HERE](bit.ly/rails_tutorial_gemfile)
 
