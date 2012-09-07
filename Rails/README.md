@@ -1,3 +1,25 @@
+MMMMMMMM               MMMMMMMM                                              d::::::d                        
+M:::::::M             M:::::::M                                              d::::::d                        
+M::::::::M           M::::::::M                                              d::::::d                        
+M:::::::::M         M:::::::::M                                              d:::::d                         
+M::::::::::M       M::::::::::M   ooooooooooo      ooooooooooo       ddddddddd:::::dyyyyyyy           yyyyyyy
+M:::::::::::M     M:::::::::::M oo:::::::::::oo  oo:::::::::::oo   dd::::::::::::::d y:::::y         y:::::y 
+M:::::::M::::M   M::::M:::::::Mo:::::::::::::::oo:::::::::::::::o d::::::::::::::::d  y:::::y       y:::::y  
+M::::::M M::::M M::::M M::::::Mo:::::ooooo:::::oo:::::ooooo:::::od:::::::ddddd:::::d   y:::::y     y:::::y   
+M::::::M  M::::M::::M  M::::::Mo::::o     o::::oo::::o     o::::od::::::d    d:::::d    y:::::y   y:::::y    
+M::::::M   M:::::::M   M::::::Mo::::o     o::::oo::::o     o::::od:::::d     d:::::d     y:::::y y:::::y     
+M::::::M    M:::::M    M::::::Mo::::o     o::::oo::::o     o::::od:::::d     d:::::d      y:::::y:::::y      
+M::::::M     MMMMM     M::::::Mo::::o     o::::oo::::o     o::::od:::::d     d:::::d       y:::::::::y       
+M::::::M               M::::::Mo:::::ooooo:::::oo:::::ooooo:::::od::::::ddddd::::::dd       y:::::::y        
+M::::::M               M::::::Mo:::::::::::::::oo:::::::::::::::o d:::::::::::::::::d        y:::::y         
+M::::::M               M::::::M oo:::::::::::oo  oo:::::::::::oo   d:::::::::ddd::::d       y:::::y          
+MMMMMMMM               MMMMMMMM   ooooooooooo      ooooooooooo      ddddddddd   ddddd      y:::::y           
+                                                                                          y:::::y            
+                                                                                         y:::::y             
+                                                                                        y:::::y              
+                                                                                       y:::::y               
+                                                                                      yyyyyyy                
+
 My Rails Development Cheatsheet
 ===============================
 
