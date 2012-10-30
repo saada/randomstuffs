@@ -104,6 +104,7 @@ fi
 
 ##############MY STUFF######################
 alias cl='clear'
+alias chromeos='sudo cgpt add -i 6 -P 0 -S 0 /dev/sda; sudo reboot'
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
