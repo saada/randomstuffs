@@ -1,14 +1,8 @@
-console.log((typeof jQuery!="undefined")?"jQuery":"NO jQuery");
-
 $(function() {
     console.log("DOM READY...");
-    $('#button').button();
-    $('div').click(function() {
-        console.log('clickkkk!');
-    });
-    $('#button').click(function() {
+    $('.btn-primary').button();
+    $('.btn-primary').click(function() {
         $(this).button('loading');
-        console.log("button clicked!");
+        setTimeout(function(){$('.btn-primary').button('reset');},1500);
     });
-
 });
