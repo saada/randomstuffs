@@ -1,8 +1,8 @@
 $(function() {
     console.log("DOM READY...");
-    $('.btn-primary').button();
-    $('.btn-primary').click(function() {
+    $('.input-file').button();
+    $('.input-file').click(function() {
         $(this).button('loading');
-        setTimeout(function(){$('.btn-primary').button('reset');},1500);
+        setTimeout(function(){$('.input-file').button('reset');},1500);
     });
 });
