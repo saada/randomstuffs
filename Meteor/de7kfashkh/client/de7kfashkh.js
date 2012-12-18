@@ -1,14 +1,14 @@
-Meteor.subscribe("directory");
+//Set default sessions here
 
 
-Template.hello.greeting = function () {
-  return "Welcome to de7k fashkh.";
+Template.title.greeting = function () {
+  return "Saba7 el de7k!";
 };
 
-Template.hello.events({
-  'click input' : function () {
-    // template data, if any, is available in 'this'
-    if (typeof console !== 'undefined')
-      console.log("You pressed the button");
-  }
+Template.uploadButton.events({
+    'click #button' : function () {
+        // $("#button").button('loading');
+        // $('#button').button('reset');
+    }
 });
+

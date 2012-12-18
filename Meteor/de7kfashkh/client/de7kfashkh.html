@@ -1,14 +1,74 @@
 <head>
-<title>de7kfashkh</title>
+    <title>de7kfashkh</title>
+    <script src="myJs.js"></script>
 </head>
 
 <body>
-    {{> hello}} {{currentUser}}
-    {{loginButtons}}
+    <div class="container">
+        <div class="hero-unit">
+            {{> title}}
+            {{> uploadButton}}
+        </div>
+        {{> content}}
+        {{> footer}}
+    </div>
+
+
+​   <script>
+
+    </script>
 </body>
 
-<template name="hello">
-    <h1>Hello World!</h1>
-    {{greeting}}
-    <input type="button" value="Click" />
+<template name="title">
+    <button class="btn" id="button" data-text-loading="Loading...">Press Me</button>
+    <button type="button" class="btn btn-primary" data-loading-text="Loading...">Loading state</button>
+    <div class="page-header">
+        <h1>De7k Fashkh! <small>{{greeting}}</small></h1>
+
+    </div>
+</template>
+
+<!-- Pic upload modal -->
+<template name="uploadButton">
+    <div class="row-fluid span6" style="text-align:center">
+        <a class="btn btn-large btn-success" data-toggle="modal" href="#myModal">Eb3at Nokta!</a>
+        <div class="modal hide fade" style="" id="myModal">
+            <div class="modal-header">
+                <a class="close" data-dismiss="modal">&times;</a>
+                <h3>Eb3at Soora</h3>
+            </div>
+            <div class="modal-body">
+                <p>Upload from URL or from local file</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-loading-text="Loading...">Eb3at!</button>
+                <a href="#" class="btn">Close</a>
+            </div>
+        </div>
+    </div>
+</template>
+
+<!-- Actual content -->
+<template name="content">
+    <div class="tabbable tabs-left">
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#1" data-toggle="tab">Eh el gedeed?</a></li>
+            <li><a href="#2" data-toggle="tab">2ay 2alsh</a></li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane active" id="1">
+                <p>I'm in Section 1.</p>
+            </div>
+            <div class="tab-pane" id="2">
+                <p>Howdy, I'm in Section 2.</p>
+            </div>
+        </div>
+    </div>
+</template>
+
+
+<template name="footer">
+    <footer style="text-align: center">
+        <p>&copy; De7k Fashkh 2013</p>
+    </footer>
 </template>

@@ -1,2 +1,5 @@
 /* CSS declarations go here */
-h1{color:orange;}
+
+.hero-unit{
+  /*background-color:#21AA7A;*/
+}
