@@ -3,40 +3,46 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="hero-unit">
+    <div class="hero-unit">
+        <div class="row-fluid">
             {{> header}}
-            {{> uploadButton}}
         </div>
+    </div>
+    <div class="container">
+
         {{> content}}
         {{> footer}}
     </div>
 </body>
 
 <template name="header">
-    <div class="page-header">
-        <h1>De7k Fashkh! <small>{{subtitle}}</small></h1>
-
+    <div class="page-header control-group">
+        <div class="span10">
+            <h1>De7k Fashkh! <small>{{subtitle}}</small></h1>
+        </div>
+        <div class="span2">
+            {{> uploadButton}}
+        </div>
     </div>
 </template>
 
 <!-- Pic upload modal -->
 <template name="uploadButton">
-    <div class="row-fluid span6" style="text-align:center">
-        <a class="btn btn-large btn-success" data-toggle="modal" href="#myModal">Eb3at Nokta!</a>
-        <div class="modal hide fade" style="" id="myModal">
-            <div class="modal-header">
-                <a class="close" data-dismiss="modal">&times;</a>
-                <h3>Eb3at Soora</h3>
-            </div>
-            <div class="modal-body">
-                <p>Upload from URL or from local file</p>
-            </div>
-            <div class="modal-footer">
-                {{> uploadFile}}
-                <button type="button" class="btn btn-primary" data-loading-text="Beneb3at ahoh!">Eb3at!</button>
-                <a href="#" class="btn">Close</a>
-            </div>
+    <a class="btn btn-large btn-success" data-toggle="modal" href="#myModal">
+        <li class="icon-arrow-up icon-white"></li>Eb3at Nokta!
+    </a>
+    <div class="modal hide fade" style="" id="myModal">
+        <div class="modal-header">
+            <a class="close" data-dismiss="modal">&times;</a>
+            <h3>Eb3at Soora</h3>
+        </div>
+        <div class="modal-body">
+            <p>Upload from URL or from local file</p>
+        </div>
+        <div class="modal-footer">
+            {{> uploadFile}}
+            <button type="button" class="btn btn-primary" data-loading-text="Beneb3at ahoh!">Eb3at!</button>
+            <a href="#" class="btn">Close</a>
         </div>
     </div>
 </template>
@@ -50,7 +56,7 @@
         </ul>
         <div class="tab-content">
             <div class="tab-pane active" id="1">
-                <p>I'm in Section 1.</p>
+                <p>{{> posts}}</p>
             </div>
             <div class="tab-pane" id="2">
                 <p>Howdy, I'm in Section 2.</p>
@@ -59,6 +65,24 @@
     </div>
 </template>
 
+<template name="posts">
+    <h1>2akher Posts</h1>
+    <table class="table table-hover table-striped">
+        <tr><th>El Soora</th><th><bold>El Score</bold></th></tr>
+        {{#each topPosts}}
+            {{> post}}
+        {{/each}}
+    </table>
+</template>
+
+<template name="post">
+    <tr class={{selected}}>
+        <td><img src="http://www.troll.me/images/yao-ming/bitch-please.jpg" class="img-polaroid" width=100 height=100></td>
+        <td>
+            {{score}}<i class="icon-thumbs-up"></i>
+        </td>
+    </tr>
+</template>
 
 <template name="footer">
     <footer style="text-align: center">

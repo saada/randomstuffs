@@ -9,13 +9,32 @@ Meteor.startup(function () {
     });
 });
 
+//header
 Template.header.subtitle = function () {
   return "Saba7 el de7k!";
 };
 
+//footer
 Template.footer.year = function () {
   return new Date().getFullYear();
 };
+
+Template.posts.topPosts = function() {
+  // return Posts.find({});
+  return Posts.find({},{sort:{score:-1}}).fetch().slice(0,5);  //get top 20 posts
+};
+
+Template.post.events({
+  'click': function() {
+    Session.set("selected_player", this._id);
+  },
+
+  'click .icon-thumbs-up': function() {
+    Posts.update(Session.get("selected_player"),{$inc: {score: 1}});
+  }
+});
+
+Template.post.selected = function() {return Session.equals("selected_player", this._id) ? "info" : '';};
 
 Template.uploadButton.events({
     'click #button' : function () {
