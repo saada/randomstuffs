@@ -13,6 +13,10 @@ Template.header.subtitle = function () {
   return "Saba7 el de7k!";
 };
 
+Template.footer.year = function () {
+  return new Date().getFullYear();
+};
+
 Template.uploadButton.events({
     'click #button' : function () {
         // $("#button").button('loading');
@@ -56,6 +60,6 @@ Meteor.saveFile = function(blob, name, path, type, callback) {
   }
   fileReader.onload = function(file) {
     Meteor.call('saveFile', file.srcElement.result, name, path, encoding, callback);
-  }
+  };
   fileReader[method](blob);
 }
